@@ -1,70 +1,71 @@
-# Getting Started with Create React App
+# Magic Flowers Boutique 🌸
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+Welcome to Magic Flowers Boutique, a beautiful and interactive React application for a virtual flower boutique. This application showcases a wide range of exquisite flowers and stunning event decorations allowing users to explore and order their favorite bouquets. The project is built using React, TypeScript, and Sass to provide a seamless and delightful user experience.
 
-## Available Scripts
+## Table of Contents
 
-In the project directory, you can run:
+- [Getting Started](#getting-started)
+  - [Prerequisites](#prerequisites)
+  - [Installation](#installation)
+  - [Running the Application](#running-the-application)
+- [Features](#features)
+- [Technologies Used](#technologies-used)
+- [Contributing](#contributing)
 
-### `npm start`
+## Getting Started
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
+Follow the instructions below to set up the Flowers Boutique project on your local machine for development and testing purposes.
 
-The page will reload when you make changes.\
-You may also see any lint errors in the console.
+## Prerequisites
 
-### `npm test`
+Before running the application, make sure you have the following software installed:
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+- Node.js (version 14 or above)
+- npm (Node Package Manager)
 
-### `npm run build`
+## Installation
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+1. Clone this repository to your local machine:
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
+```bash
+git clone https://github.com/OlgaBezrukova8/magic-flowers-boutique.git
+```
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+2. Navigate to the project's root directory:
 
-### `npm run eject`
+```bash
+cd flowers-boutique
+```
 
-**Note: this is a one-way operation. Once you `eject`, you can't go back!**
+3. Install the required dependencies:
 
-If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
+```bash
+npm install
+```
 
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
+## Running the Application
 
-You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
+To start the development server and run the Magic Flowers Boutique application locally, use the following command:
 
-## Learn More
+```bash
+npm run dev
+```
 
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
+## Features
 
-To learn React, check out the [React documentation](https://reactjs.org/).
+- View detailed information about each flower, including its name, description, and price.
+- Responsive design for seamless user experience on different devices.
 
-### Code Splitting
+## Technologies Used
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
+The Flowers Boutique project utilizes the following technologies:
 
-### Analyzing the Bundle Size
+- React: A popular JavaScript library for building user interfaces.
+- TypeScript: A statically typed superset of JavaScript, providing enhanced development experience.
+- Sass: A powerful CSS preprocessor, adding features and flexibility to the stylesheets.
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
+## Contributing
 
-### Making a Progressive Web App
+I welcome contributions to improve Magic Flowers Boutique. If you find any bugs or have suggestions for new features, please submit an issue or open a pull request.
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
-
-### Advanced Configuration
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
-
-### Deployment
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
-
-### `npm run build` fails to minify
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+I hope you enjoy exploring Boutique, and feel free to reach out if you have any questions or feedback! 
