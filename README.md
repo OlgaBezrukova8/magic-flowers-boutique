@@ -34,7 +34,7 @@ git clone https://github.com/OlgaBezrukova8/magic-flowers-boutique.git
 2. Navigate to the project's root directory:
 
 ```bash
-cd flowers-boutique
+cd magic-flowers-boutique
 ```
 
 3. Install the required dependencies:
