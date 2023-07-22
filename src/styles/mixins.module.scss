@@ -1,4 +1,4 @@
-@import "./variables.scss";
+@import "./variables.module.scss";
 
 @mixin font-style-text($font-size, $font-weigh, $line-heigh, $color) {
   font-family: $font-family;
