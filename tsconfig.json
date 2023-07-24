@@ -19,6 +19,6 @@
     "noImplicitAny": false
   },
 
-  "include": ["src"],
+  "include": ["typings", "src"],
   "references": [{ "path": "./tsconfig.node.json" }]
 }
