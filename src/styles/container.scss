@@ -1,9 +1,9 @@
-@import "./media.module.scss";
+@import "./media.scss";
 
 .container {
   width: 100%;
   margin: 0 auto;
-  padding: 0 15px;
+  padding: 0 10px;
 
   @include media(mobile) {
     max-width: 100%;
@@ -11,6 +11,7 @@
 
   @include media(tablet) {
     max-width: 768px;
+    padding: 0 20px;
   }
 
   @include media(desktop) {

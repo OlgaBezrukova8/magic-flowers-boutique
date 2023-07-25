@@ -1,7 +1,6 @@
-@import "./variables.module.scss";
+@import "./variables.scss";
 
 @mixin font-style-text($font-size, $font-weigh, $line-heigh, $color) {
-  font-family: $font-family;
   font-size: $font-size;
   font-weight: $font-weigh;
   line-height: $line-heigh;
@@ -17,4 +16,12 @@
   overflow: hidden;
   border: 0;
   clip: rect(0 0 0 0);
+}
+
+@mixin border-radius($radius) {
+  border-radius: $radius;
+  -webkit-border-radius: $radius;
+  -moz-border-radius: $radius;
+  -ms-border-radius: $radius;
+  -o-border-radius: $radius;
 }

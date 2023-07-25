@@ -1,3 +1,5 @@
+@import "./styles/variables.scss";
+
 * {
   margin: 0;
   padding: 0;
@@ -15,11 +17,16 @@ body {
     "Raleway" sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
+  background-color: $purple-light-extra;
 }
 
 code {
   font-family: source-code-pro, Menlo, Monaco, Consolas, "Courier New",
     monospace;
+}
+
+button {
+  cursor: pointer;
 }
 
 ul {
