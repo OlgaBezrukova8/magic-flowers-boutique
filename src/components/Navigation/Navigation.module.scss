@@ -1,0 +1,23 @@
+@import "../../styles/container.scss";
+@import "../../styles/variables.scss";
+@import "../../styles/mixins.scss";
+
+.navigation {
+  &__link {
+    text-decoration: none;
+
+    @include media(desktop) {
+      @include font-style-text(20px, 400, 24px, $black);
+    }
+  }
+
+  &__link:not(:last-child) {
+    @include media(desktop) {
+      margin-right: 20px;
+    }
+  }
+
+  &__activeLink {
+    color: $purple-dark;
+  }
+}
