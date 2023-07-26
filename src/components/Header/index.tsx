@@ -13,11 +13,11 @@ const Header: React.FC = () => {
       <div>
         <NavigationLink linkTo="/">
           <Image
-            source="/src/images/logo.png"
+            source="src/images/logo.png"
             alt="Logo of company"
             width={120}
           />
-              <Image
+          <Image
             source="/src/images/flowers-bouquet-decor.jpg"
             alt="Logo of company"
             width={120}
