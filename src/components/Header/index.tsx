@@ -12,7 +12,7 @@ const Header: React.FC = () => {
     <header className={classes.header}>
       <div>
         <NavigationLink linkTo="/">
-          <Image source={logo} alt="Logo of company" width={120} />
+          <Image source={logo} alt="Logo of company" width={140} />
         </NavigationLink>
       </div>
 

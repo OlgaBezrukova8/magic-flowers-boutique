@@ -10,24 +10,25 @@
     display: flex;
     align-items: center;
     justify-content: space-between;
-    padding: 0 80px;
+    padding: 20px 80px;
   }
 
   &__button {
     padding: 8px 16px;
     border: 1px solid $black;
     @include border-radius(4px);
+    @include font-style-text(20px, 400, 24px, $black);
     background-color: transparent;
 
-    @include media(desktop) {
-      @include font-style-text(20px, 400, 24px, $black);
-    }
+    transition: background-color 0.3s ease;
+    @include alternateAnimation;
+    @include scaleUpAnimation;
 
     &:hover,
     &:focus {
       background-color: $purple-light;
       border-color: $purple-light;
-      color: $white;
+      color: $purple-dark;
     }
   }
 }
