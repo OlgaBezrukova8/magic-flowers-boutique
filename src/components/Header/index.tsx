@@ -17,6 +17,11 @@ const Header: React.FC = () => {
             alt="Logo of company"
             width={120}
           />
+              <Image
+            source="/src/images/flowers-bouquet-decor.jpg"
+            alt="Logo of company"
+            width={120}
+          />
         </NavigationLink>
       </div>
 
