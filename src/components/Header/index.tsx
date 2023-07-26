@@ -4,7 +4,7 @@ import NavigationLink from "../UI/NavigationLink";
 import Navigation from "../Navigation";
 import Button from "../UI/Button";
 import Image from "../UI/Image";
-
+import logo from "../../images/logo.png";
 import classes from "./Header.module.scss";
 
 const Header: React.FC = () => {
@@ -12,16 +12,7 @@ const Header: React.FC = () => {
     <header className={classes.header}>
       <div>
         <NavigationLink linkTo="/">
-          <Image
-            source="src/images/logo.png"
-            alt="Logo of company"
-            width={120}
-          />
-          <Image
-            source="/src/images/flowers-bouquet-decor.jpg"
-            alt="Logo of company"
-            width={120}
-          />
+          <Image source={logo} alt="Logo of company" width={120} />
         </NavigationLink>
       </div>
 
