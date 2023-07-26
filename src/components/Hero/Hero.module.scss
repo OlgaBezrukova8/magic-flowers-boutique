@@ -1,0 +1,56 @@
+@import "../../styles/container.scss";
+@import "../../styles/variables.scss";
+@import "../../styles/mixins.scss";
+
+.hero {
+  position: relative;
+  padding: 120px 0;
+
+  &::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: calc(-50vw + 50%);
+    width: 100vw;
+    height: 100%;
+    background-image: url("../../images//flowers-bouquet-tulips.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: 25% 20%;
+    z-index: -1;
+  }
+
+  &__text {
+    @include font-style-text(20px, 400, 26px, $purple-dark);
+    text-transform: uppercase;
+    @include append(20px);
+  }
+
+  &__title {
+    @include font-style-text(16px, 400, 24px, $black);
+    @include append(20px);
+
+    &_main {
+      @include font-style-text(70px, 700, 120%, $black);
+      @include append(20px);
+    }
+  }
+
+  &__button {
+    padding: 14px 16px;
+    border: 1px solid $purple-dark;
+    @include border-radius(4px);
+    @include font-style-text(20px, 400, 24px, $purple-dark);
+    background-color: transparent;
+
+    transition: background-color 0.3s ease;
+    @include alternateAnimation;
+    @include scaleUpAnimation;
+
+    &:hover,
+    &:focus {
+      background-color: $purple-light;
+      border-color: $purple-light;
+    }
+  }
+}
