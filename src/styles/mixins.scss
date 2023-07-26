@@ -7,6 +7,14 @@
   color: $color;
 }
 
+@mixin append($margin-bottom) {
+  margin-bottom: $margin-bottom;
+}
+
+@mixin prepend($margin-top) {
+  margin-top: $margin-top;
+}
+
 @mixin visually-hidden {
   position: absolute;
   width: 1px;
@@ -24,4 +32,36 @@
   -moz-border-radius: $radius;
   -ms-border-radius: $radius;
   -o-border-radius: $radius;
+}
+
+@mixin alternateAnimation {
+  @keyframes alternate {
+    from {
+      opacity: 0;
+    }
+    to {
+      opacity: 1;
+    }
+  }
+
+  &:hover,
+  &:focus {
+    animation: alternate 0.5s;
+    outline: none;
+  }
+}
+
+@mixin scaleUpAnimation {
+  @keyframes scaleUp {
+    from {
+      transform: scale(1);
+    }
+    to {
+      transform: scale(1.2);
+    }
+  }
+
+  &:active {
+    animation: scaleUp 0.3s;
+  }
 }
