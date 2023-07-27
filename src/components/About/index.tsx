@@ -1,5 +1,5 @@
 import React from "react";
-import Section from "../Section";
+import Section from "../UI/Section";
 import Image from "../UI/Image";
 import flowersLetter from "../../images/flowers-letter.jpg";
 import classes from "./About.module.scss";

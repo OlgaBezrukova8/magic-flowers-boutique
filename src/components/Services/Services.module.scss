@@ -1,0 +1,74 @@
+@import "../../styles/container.scss";
+@import "../../styles/variables.scss";
+@import "../../styles/mixins.scss";
+
+.services {
+  position: relative;
+  padding: 120px 0;
+
+  &::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: calc(-50vw + 50%);
+    width: 100vw;
+    height: 100%;
+    background-image: linear-gradient(
+        rgba(137, 138, 154, 0.4),
+        rgba(137, 138, 154, 0.4)
+      ),
+      url("../../images/flowers-rose.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+
+    z-index: -1;
+  }
+
+  &__title {
+    @include font-style-text(20px, 400, 26px, $purple-dark);
+    text-transform: uppercase;
+    @include append(20px);
+    text-align: center;
+  }
+
+  &__text {
+    @include font-style-text(64px, 700, 110%, $black);
+    @include append(40px);
+    text-align: center;
+  }
+
+  &__container {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-gap: 28px;
+  }
+
+  &__card {
+    padding: 28px;
+    background-color: rgba(255, 255, 255, 0.5);
+    @include border-radius(4px);
+
+    &_image {
+      @include append(20px);
+      max-height: 100px;
+      object-fit: cover;
+    }
+
+    &_title {
+      @include append(10px);
+      @include font-style-text(28px, 600, 26px, $black);
+    }
+
+    &_text {
+      @include append(10px);
+      @include font-style-text(16px, 400, 20px, $black);
+      width: fit-content;
+    }
+
+    &_price {
+      @include append(10px);
+      @include font-style-text(16px, 400, 20px, $purple-dark);
+    }
+  }
+}

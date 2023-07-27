@@ -1,5 +1,5 @@
 import React from "react";
-import Section from "../Section";
+import Section from "../UI/Section";
 import Button from "../UI/Button";
 import classes from "./Hero.module.scss";
 
