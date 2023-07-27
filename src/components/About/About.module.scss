@@ -1,0 +1,36 @@
+@import "../../styles/container.scss";
+@import "../../styles/variables.scss";
+@import "../../styles/mixins.scss";
+
+.about {
+  display: flex;
+  align-items: center;
+  padding: 120px 0;
+
+  &__image {
+    width: 50%;
+    margin-right: 100px;
+    @include border-radius(4px);
+  }
+
+  &__title {
+    @include font-style-text(20px, 400, 26px, $purple-dark);
+    text-transform: uppercase;
+    @include append(20px);
+  }
+
+  &__text {
+    @include font-style-text(16px, 400, 24px, $black);
+    @include append(20px);
+  }
+
+  &__phrase {
+    @include font-style-text(20px, 600, 26px, $purple-light);
+
+    &_container {
+      display: grid;
+      grid-template-columns: repeat(2, 1fr);
+      grid-gap: 20px;
+    }
+  }
+}
