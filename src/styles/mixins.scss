@@ -57,11 +57,11 @@
       transform: scale(1);
     }
     to {
-      transform: scale(1.2);
+      transform: scale(1.1);
     }
   }
 
   &:active {
-    animation: scaleUp 0.3s;
+    animation: scaleUp 0.5s;
   }
 }

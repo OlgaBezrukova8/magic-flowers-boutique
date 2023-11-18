@@ -1,4 +1,4 @@
-import React from "react";
+import React, { FunctionComponent } from "react";
 
 import NavigationLink from "../UI/NavigationLink";
 import Navigation from "../Navigation";
@@ -7,16 +7,16 @@ import Image from "../UI/Image";
 import logo from "../../images/logo.png";
 import classes from "./Header.module.scss";
 
-const Header: React.FC = () => {
+const Header: FunctionComponent = () => {
   return (
-    <header className={classes.header}>
+    <header className={classes.Header__container}>
       <div>
         <NavigationLink linkTo="/">
           <Image source={logo} alt="Logo of company" width={140} />
         </NavigationLink>
       </div>
 
-      <nav className={classes.header__navigation}>
+      <nav className={classes.Header__navigation}>
         <Navigation />
       </nav>
 
@@ -25,7 +25,7 @@ const Header: React.FC = () => {
         onClick={() => {
           console.log("Open modal with form to contact");
         }}
-        className={classes.header__button}
+        className={classes.Header__button}
       >
         Contact Us
       </Button>

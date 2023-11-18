@@ -8,8 +8,8 @@ import classes from "./Layout.module.scss";
 const Layout: FunctionComponent = () => {
   return (
     <>
-      <Header />
       <main className={classes.Layout__main}>
+        <Header />
         <Outlet />
       </main>
       <Footer />

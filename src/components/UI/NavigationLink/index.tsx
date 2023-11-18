@@ -1,5 +1,5 @@
 import React from "react";
-import { NavLink } from "react-router-dom";
+import { Link } from "react-router-dom";
 
 interface LinkProps {
   linkTo: string;
@@ -20,9 +20,9 @@ const NavigationLink: React.FC<LinkProps> = ({
 
   return (
     <div key={key}>
-      <NavLink to={linkTo} className={linkClasses}>
+      <Link to={linkTo} className={linkClasses}>
         {children}
-      </NavLink>
+      </Link>
     </div>
   );
 };

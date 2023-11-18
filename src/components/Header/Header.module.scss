@@ -1,34 +1,37 @@
-@import "../../styles/container.scss";
 @import "../../styles/variables.scss";
 @import "../../styles/mixins.scss";
 
-.header {
-  margin: 0 auto;
-  max-width: 1222px;
-
-  @include media(desktop) {
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-    padding: 20px 40px;
+.Header {
+  &__container {
+    padding: 20px 0;
   }
+}
 
-  &__button {
-    padding: 8px 16px;
-    border: 1px solid $black;
-    @include border-radius(4px);
-    @include font-style-text(20px, 400, 24px, $black);
-    background-color: transparent;
+@media (max-width: $screen-desktop) {
+  .Header {
+    &__container {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+    }
 
-    transition: background-color 0.3s ease;
-    @include alternateAnimation;
-    @include scaleUpAnimation;
+    &__button {
+      padding: 8px 16px;
+      border: 1px solid $black;
+      @include border-radius(4px);
+      @include font-style-text(20px, 400, 24px, $black);
+      background-color: transparent;
 
-    &:hover,
-    &:focus {
-      background-color: $purple-light;
-      border-color: $purple-light;
-      color: $purple-dark;
+      transition: background-color all 0.25s ease-in-out;
+      @include alternateAnimation;
+      @include scaleUpAnimation;
+
+      &:hover,
+      &:focus {
+        background-color: $purple-light;
+        border-color: $purple-light;
+        color: $purple-dark;
+      }
     }
   }
 }
