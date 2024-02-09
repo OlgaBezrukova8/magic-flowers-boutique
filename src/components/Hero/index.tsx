@@ -5,7 +5,7 @@ import classes from "./Hero.module.scss";
 
 const Hero: React.FC = () => {
   return (
-    <Section className={classes.hero}>
+    <Section className={classes.hero} id="home">
       <p className={classes.hero__text}>Welcome to Magic Flowers Boutique</p>
       <h1 className={classes.hero__title_main}>
         Transforming <br /> Moments into <br /> Memories

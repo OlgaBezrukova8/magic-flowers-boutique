@@ -13,7 +13,7 @@ const phrasesArray: string[] = [
 
 const About: React.FC = () => {
   return (
-    <Section className={classes.about}>
+    <Section className={classes.about} id="about">
       <Image
         source={flowersLetter}
         alt={"Flowers on the letter"}

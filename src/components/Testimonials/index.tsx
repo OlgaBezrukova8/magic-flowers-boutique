@@ -18,7 +18,7 @@ const Testimonials: React.FC = () => {
   ));
 
   return (
-    <Section className={classes.testimonials}>
+    <Section className={classes.testimonials} id="testimonials">
       <h2 className={classes.testimonials__title}>Testimonials</h2>
       <p className={classes.testimonials__text}>
         What Customers Say <br />
@@ -30,8 +30,8 @@ const Testimonials: React.FC = () => {
         <div className={classes.testimonials__container_card}>
           <div>{icons}</div>
           <p className={classes.testimonials__container_text}>
-            Magic Flowers Boutique created the most exquisite bouquet for my anniversary.
-            My partner was thrilled! Fast delivery! Quick answer!
+            Magic Flowers Boutique created the most exquisite bouquet for my
+            anniversary. My partner was thrilled! Fast delivery! Quick answer!
           </p>
 
           <div className={classes.testimonials__container_person}>
@@ -46,8 +46,8 @@ const Testimonials: React.FC = () => {
         <div className={classes.testimonials__container_card}>
           <div>{icons}</div>
           <p className={classes.testimonials__container_text}>
-            Absolutely stunning wedding decor! Magic Flowers Boutique turned our dream
-            wedding into a fairytale. The best decorations ever!
+            Absolutely stunning wedding decor! Magic Flowers Boutique turned our
+            dream wedding into a fairytale. The best decorations ever!
           </p>
 
           <div className={classes.testimonials__container_person}>

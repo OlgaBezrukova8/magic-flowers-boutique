@@ -64,7 +64,7 @@ const servicesData: ServicesProps[] = [
 
 const Services: React.FC = () => {
   return (
-    <Section className={classes.services}>
+    <Section className={classes.services} id="services">
       <h2 className={classes.services__title}>Our services</h2>
       <p className={classes.services__text}>
         Discover the Luxury <br /> of flowers
