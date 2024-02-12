@@ -2,8 +2,7 @@
 
 .Layout {
   &__main {
-    max-width: 1222px;
-    box-sizing: content-box;
+    max-width: 1170px;
     padding: 0 40px 0;
     margin: 0 auto;
   }
@@ -12,8 +11,6 @@
 @media (max-width: $screen-desktop) {
   .Layout {
     &__main {
-      width: 100%;
-      box-sizing: border-box;
       padding: 0 24px 0;
     }
   }

@@ -12,13 +12,7 @@
   }
 
   @if $size ==desktop {
-    @media (min-width: 1280px) {
-      @content;
-    }
-  }
-
-  @if $size ==desktop-l {
-    @media (min-width: 1440px) {
+    @media (min-width: 1170px) {
       @content;
     }
   }
