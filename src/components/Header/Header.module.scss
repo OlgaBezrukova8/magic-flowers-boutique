@@ -16,13 +16,15 @@
     &__button {
       padding: 8px 16px;
       border: 1px solid $black;
-      @include border-radius(4px);
+      @include border-radius(8px);
       @include font-style-text(20px, 400, 24px, $black);
       background-color: transparent;
 
       transition: background-color all 0.25s ease-in-out;
       @include alternateAnimation;
       @include scaleUpAnimation;
+
+      // TODO: update animation for all buttons
 
       &:hover,
       &:focus {

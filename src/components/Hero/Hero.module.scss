@@ -39,7 +39,7 @@
   &__button {
     padding: 14px 16px;
     border: 1px solid $purple-dark;
-    @include border-radius(4px);
+    @include border-radius(8px);
     @include font-style-text(20px, 400, 24px, $purple-dark);
     background-color: transparent;
 
