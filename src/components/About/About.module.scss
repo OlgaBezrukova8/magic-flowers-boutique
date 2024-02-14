@@ -16,12 +16,12 @@
   &__title {
     @include font-style-text(20px, 400, 26px, $purple-dark);
     text-transform: uppercase;
-    @include append(20px);
+    @include append(26px);
   }
 
   &__text {
     @include font-style-text(16px, 400, 24px, $black);
-    @include append(20px);
+    @include append(32px);
   }
 
   &__phrase {
