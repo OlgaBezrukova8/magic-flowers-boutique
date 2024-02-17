@@ -23,9 +23,12 @@ interface socialMediaProps {
 }
 
 const contactsData: contactsProps[] = [
-  { icon: <HiLocationMarker />, description: "Los Angeles, California 34846" },
-  { icon: <HiMail />, description: "support@magic.com" },
-  { icon: <HiPhone />, description: "(664)000-0000" },
+  {
+    icon: <HiLocationMarker size={24} />,
+    description: "Los Angeles, California 34846",
+  },
+  { icon: <HiMail size={24} />, description: "support@magic.com" },
+  { icon: <HiPhone size={24} />, description: "(664)000-0000" },
 ];
 
 const socialMediaData: socialMediaProps[] = [
