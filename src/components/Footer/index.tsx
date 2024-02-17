@@ -11,6 +11,7 @@ import Image from "../UI/Image";
 import NavigationLink from "../UI/NavigationLink";
 import logo from "../../images/logo.png";
 import classes from "./Footer.module.scss";
+import Navigation from "../Navigation";
 
 interface contactsProps {
   icon: any;

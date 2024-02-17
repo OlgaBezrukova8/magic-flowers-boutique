@@ -1,19 +1,8 @@
 import React, { useState } from "react";
 import { Link as ScrollLink } from "react-scroll";
 
+import navLinkData from "./data/navigationData";
 import classes from "./Navigation.module.scss";
-
-interface NavLinkProps {
-  name: string;
-  source: string;
-}
-
-const navLinkData: NavLinkProps[] = [
-  { name: "Home", source: "home" },
-  { name: "About", source: "about" },
-  { name: "Services", source: "services" },
-  { name: "Testimonials", source: "testimonials" },
-];
 
 const Navigation: React.FC = () => {
   const [activeNavLink, setActiveNavLink] = useState<number | null>(0);
