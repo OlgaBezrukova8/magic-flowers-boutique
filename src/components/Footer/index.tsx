@@ -17,28 +17,42 @@ interface contactsProps {
   description: string;
 }
 
+interface socialMediaProps {
+  icon: any;
+  link: string;
+}
+
 const contactsData: contactsProps[] = [
-  { icon: <HiLocationMarker />, description: "Los Angeles, California 34846" },
-  { icon: <HiMail />, description: "support@magic.com" },
-  { icon: <HiPhone />, description: "(664)000-0000" },
+  {
+    icon: <HiLocationMarker size={24} />,
+    description: "Los Angeles, California 34846",
+  },
+  { icon: <HiMail size={24} />, description: "support@magic.com" },
+  { icon: <HiPhone size={24} />, description: "(664)000-0000" },
 ];
 
-const iconsArray = [
-  AiFillFacebook,
-  AiFillLinkedin,
-  AiFillTwitterCircle,
-  AiFillInstagram,
+const socialMediaData: socialMediaProps[] = [
+  {
+    icon: <AiFillInstagram size={30} />,
+    link: "https://www.instagram.com/",
+  },
+  {
+    icon: <AiFillFacebook size={30} />,
+    link: "https://www.facebook.com/",
+  },
+  {
+    icon: <AiFillLinkedin size={30} />,
+    link: "https://www.linkedin.com/",
+  },
+  {
+    icon: <AiFillTwitterCircle size={30} />,
+    link: "https://twitter.com/",
+  },
 ];
 
 // TODO: create an object with links and icons to map it with NavigationLink component
 
 const Footer: React.FC = () => {
-  const icons = iconsArray.map((Icon, index) => (
-    <div key={`icon-${index + 1}`} className={classes.footer__social}>
-      <Icon className={classes.footer__social_icon} />
-    </div>
-  ));
-
   return (
     <footer className={classes.footer}>
       <div>
@@ -56,14 +70,32 @@ const Footer: React.FC = () => {
           artistry of nature.
         </p>
 
-        <div className={classes.footer__social_container}>{icons}</div>
+        <div className={classes.footer__social}>
+          {socialMediaData.map(({ icon, link }, index) => (
+            <div
+              key={`social-${index + 1}`}
+              className={classes.footer__social_iconBox}
+            >
+              <a
+                href={link}
+                target="_blank"
+                className={classes.footer__social_link}
+              >
+                <span className={classes.footer__social_icon}>{icon}</span>
+              </a>
+            </div>
+          ))}
+        </div>
       </div>
 
       <div>
         <h2 className={classes.footer__title}>Get In Touch</h2>
 
         {contactsData.map(({ icon, description }, index) => (
-          <div key={index} className={classes.footer__contacts}>
+          <div
+            key={`contacts-${index + 1}`}
+            className={classes.footer__contacts}
+          >
             <span className={classes.footer__contacts_icon}>{icon}</span>
             <p className={classes.footer__contacts_text}>{description}</p>
           </div>

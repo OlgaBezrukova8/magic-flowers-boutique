@@ -39,23 +39,36 @@
   }
 
   &__social {
-    padding: 6px;
-    background-color: $white;
-    width: 44px;
-    height: 44px;
-    @include border-radius(50%);
+    display: flex;
+    align-items: center;
 
-    &:not(:last-child) {
-      margin-right: 8px;
+    &_iconBox {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+
+      width: 44px;
+      height: 44px;
+
+      background-color: $white;
+      @include border-radius(50%);
+
+      &:not(:last-child) {
+        margin-right: 8px;
+      }
     }
 
-    &_container {
+    &_link {
       display: flex;
+      align-items: center;
+      justify-content: center;
+
+      padding: 15px;
     }
 
     &_icon {
+      display: inline-block;
       color: $purple-light;
-      width: 30px;
       height: 30px;
     }
   }
@@ -70,8 +83,10 @@
     align-items: center;
 
     &_icon {
+      display: inline-block;
+      margin-right: 8px;
+      height: 24px;
       color: $purple-light;
-      font-size: 20px;
     }
 
     &_text {
