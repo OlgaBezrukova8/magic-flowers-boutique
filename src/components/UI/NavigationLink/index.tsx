@@ -1,29 +1,45 @@
 import React from "react";
-import { Link } from "react-router-dom";
+import { Link as ScrollLink } from "react-scroll";
 
 interface LinkProps {
-  linkTo: string;
+  to: string;
   children: React.ReactNode;
   key?: string;
   className?: string;
-  activeStyle?: string;
-  onClick?: () => void
+  activeClass?: string;
+  onClick?: () => void;
+  spy?: boolean;
+  smooth?: boolean;
+  offset?: number;
+  duration?: number;
 }
 
 const NavigationLink: React.FC<LinkProps> = ({
-  linkTo,
+  to,
   className,
   children,
-  key,
+  activeClass,
+  onClick,
+  spy,
+  smooth,
+  offset,
+  duration,
 }) => {
   const linkClasses = className || "";
 
   return (
-    <div key={key}>
-      <Link to={linkTo} className={linkClasses}>
-        {children}
-      </Link>
-    </div>
+    <ScrollLink
+      to={to}
+      className={linkClasses}
+      activeClass={activeClass}
+      onClick={onClick}
+      spy={spy}
+      smooth={smooth}
+      offset={offset}
+      duration={duration}
+    >
+      {children}
+    </ScrollLink>
   );
 };
 

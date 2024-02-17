@@ -8,10 +8,11 @@ import {
 import { HiLocationMarker, HiMail, HiPhone } from "react-icons/hi";
 
 import Image from "../UI/Image";
-import NavigationLink from "../UI/NavigationLink";
+import navLinkData from "../Navigation/data/navigationData";
+import onScrollToTop from "../UI/NavigationLink/services/onScrollToTop";
 import logo from "../../images/logo.png";
 import classes from "./Footer.module.scss";
-import Navigation from "../Navigation";
+import NavigationLink from "../UI/NavigationLink";
 
 interface contactsProps {
   icon: any;
@@ -51,13 +52,13 @@ const socialMediaData: socialMediaProps[] = [
   },
 ];
 
-// TODO: create an object with links and icons to map it with NavigationLink component
+// TODO: fix "target Element not found"
 
 const Footer: React.FC = () => {
   return (
     <footer className={classes.footer}>
       <div>
-        <NavigationLink linkTo="/">
+        <NavigationLink to="/" onClick={onScrollToTop}>
           <Image
             source={logo}
             alt="Logo of company"
@@ -105,7 +106,14 @@ const Footer: React.FC = () => {
 
       <div>
         <h2 className={classes.footer__title}>Quicklinks</h2>
-        {/* TODO: create an object with links and name of links to map it with NavigationLink component */}
+
+        {navLinkData.map(({ name, source }, index) => (
+          <div key={`${name}${index}`}>
+            <NavigationLink to={source} spy={true} smooth={true} duration={500}>
+              {name}
+            </NavigationLink>
+          </div>
+        ))}
       </div>
     </footer>
   );
