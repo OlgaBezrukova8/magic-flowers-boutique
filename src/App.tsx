@@ -1,10 +1,10 @@
 import React from "react";
 import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
 
-import HomePage from "./pages/HomePage";
-import NotFoundPage from "./pages/NotFoundPage";
-import Layout from "./components/Layout";
-import Loader from "./components/UI/Loader";
+import HomePage from "./pages/HomePage/HomePage";
+import NotFoundPage from "./pages/NotFoundPage/NotFoundPage";
+import Layout from "./components/Layout/Layout";
+import Loader from "./components/UI/Loader/Loader";
 
 function App() {
   const router = (

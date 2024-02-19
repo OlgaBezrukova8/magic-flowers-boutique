@@ -1,9 +1,9 @@
 import React, { FunctionComponent } from "react";
 
-import NavigationLink from "../UI/NavigationLink";
-import Navigation from "../Navigation";
-import Button from "../UI/Button";
-import Image from "../UI/Image";
+import NavigationLink from "../UI/NavigationLink/NavigationLink";
+import Navigation from "../Navigation/Navigation";
+import Button from "../UI/Button/Button";
+import Image from "../UI/Image/Image";
 import onScrollToTop from "../UI/NavigationLink/services/onScrollToTop";
 import logo from "../../images/logo.png";
 import classes from "./Header.module.scss";

@@ -1,6 +1,6 @@
 import React from "react";
-import Section from "../UI/Section";
-import Button from "../UI/Button";
+import Section from "../UI/Section/Section";
+import Button from "../UI/Button/Button";
 import classes from "./Hero.module.scss";
 
 const Hero: React.FC = () => {

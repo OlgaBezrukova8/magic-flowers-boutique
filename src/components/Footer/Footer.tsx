@@ -7,12 +7,12 @@ import {
 } from "react-icons/ai";
 import { HiLocationMarker, HiMail, HiPhone } from "react-icons/hi";
 
-import Image from "../UI/Image";
+import Image from "../UI/Image/Image";
 import navLinkData from "../Navigation/data/navigationData";
 import onScrollToTop from "../UI/NavigationLink/services/onScrollToTop";
 import logo from "../../images/logo.png";
 import classes from "./Footer.module.scss";
-import NavigationLink from "../UI/NavigationLink";
+import NavigationLink from "../UI/NavigationLink/NavigationLink";
 
 interface contactsProps {
   id: string;
