@@ -1,6 +1,6 @@
-import React from "react";
-import Section from "../UI/Section";
-import Image from "../UI/Image";
+import React, { FunctionComponent } from "react";
+import Section from "../UI/Section/Section";
+import Image from "../UI/Image/Image";
 import flowersLetter from "../../images/flowers-letter.jpg";
 import classes from "./About.module.scss";
 
@@ -11,7 +11,7 @@ const phrasesArray: string[] = [
   "24/7 support",
 ];
 
-const About: React.FC = () => {
+const About: FunctionComponent = () => {
   return (
     <Section className={classes.about} id="about">
       <Image

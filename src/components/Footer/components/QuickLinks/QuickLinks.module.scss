@@ -1,0 +1,14 @@
+@import "../../../../styles/container.scss";
+@import "../../../../styles/variables.scss";
+@import "../../../../styles/mixins.scss";
+
+.QuickLinks {
+  &__title {
+    @include font-style-text(28px, 600, 35px, $white);
+    @include append(40px);
+  }
+  &__link {
+    @include font-style-text(14px, 400, 35px, $grey);
+    cursor: pointer;
+  }
+}

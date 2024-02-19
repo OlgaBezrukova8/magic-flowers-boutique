@@ -1,7 +1,7 @@
-import React from "react";
+import React, { FunctionComponent } from "react";
 import { ThreeDots } from "react-loader-spinner";
 
-const Loader: React.FC = () => {
+const Loader: FunctionComponent = () => {
   return (
     <ThreeDots
       height="80"

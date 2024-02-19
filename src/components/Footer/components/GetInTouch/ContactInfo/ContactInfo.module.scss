@@ -1,0 +1,20 @@
+@import "../../../../../styles/container.scss";
+@import "../../../../../styles/variables.scss";
+@import "../../../../../styles/mixins.scss";
+
+.ContactInfo {
+  display: flex;
+  align-items: center;
+
+  &__icon {
+    display: inline-block;
+    margin-right: 8px;
+    height: 24px;
+    color: $purple-light;
+  }
+
+  &__text {
+    @include font-style-text(14px, 400, 35px, $grey);
+    cursor: pointer;
+  }
+}

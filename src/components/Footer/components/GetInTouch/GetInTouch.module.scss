@@ -1,0 +1,10 @@
+@import "../../../../styles/container.scss";
+@import "../../../../styles/variables.scss";
+@import "../../../../styles/mixins.scss";
+
+.GetInTouch {
+  &__title {
+    @include font-style-text(28px, 600, 35px, $white);
+    @include append(40px);
+  }
+}

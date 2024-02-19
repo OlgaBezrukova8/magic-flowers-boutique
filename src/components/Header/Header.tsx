@@ -1,17 +1,20 @@
 import React, { FunctionComponent } from "react";
 
-import NavigationLink from "../UI/NavigationLink";
-import Navigation from "../Navigation";
-import Button from "../UI/Button";
-import Image from "../UI/Image";
+import NavigationLink from "../UI/NavigationLink/NavigationLink";
+import Navigation from "../Navigation/Navigation";
+import Button from "../UI/Button/Button";
+import Image from "../UI/Image/Image";
+import onScrollToTop from "../UI/NavigationLink/services/onScrollToTop";
 import logo from "../../images/logo.png";
 import classes from "./Header.module.scss";
+
+// TODO: fix "target Element not found"
 
 const Header: FunctionComponent = () => {
   return (
     <header className={classes.Header__container}>
       <div>
-        <NavigationLink linkTo="/">
+        <NavigationLink to="/" onClick={onScrollToTop}>
           <Image source={logo} alt="Logo of company" width={140} />
         </NavigationLink>
       </div>

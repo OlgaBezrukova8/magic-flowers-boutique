@@ -1,9 +1,9 @@
-import React from "react";
-import Section from "../UI/Section";
-import Button from "../UI/Button";
+import React, { FunctionComponent } from "react";
+import Section from "../UI/Section/Section";
+import Button from "../UI/Button/Button";
 import classes from "./Hero.module.scss";
 
-const Hero: React.FC = () => {
+const Hero: FunctionComponent = () => {
   return (
     <Section className={classes.hero} id="home">
       <p className={classes.hero__text}>Welcome to Magic Flowers Boutique</p>

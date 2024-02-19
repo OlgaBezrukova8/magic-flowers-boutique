@@ -1,4 +1,4 @@
-import React from "react";
+import React, { FunctionComponent } from "react";
 
 interface ButtonProps {
   onClick: () => void;
@@ -9,7 +9,7 @@ interface ButtonProps {
   disabled?: boolean;
 }
 
-const Button: React.FC<ButtonProps> = ({
+const Button: FunctionComponent<ButtonProps> = ({
   onClick,
   children,
   className,
