@@ -91,6 +91,7 @@
 
     &_text {
       @include font-style-text(14px, 400, 35px, $grey);
+      cursor: pointer;
     }
   }
 }

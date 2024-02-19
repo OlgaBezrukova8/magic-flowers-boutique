@@ -15,6 +15,7 @@ import classes from "./Footer.module.scss";
 import NavigationLink from "../UI/NavigationLink";
 
 interface contactsProps {
+  id: string;
   icon: any;
   description: string;
 }
@@ -26,11 +27,12 @@ interface socialMediaProps {
 
 const contactsData: contactsProps[] = [
   {
+    id: "address",
     icon: <HiLocationMarker size={24} />,
     description: "Los Angeles, California 34846",
   },
-  { icon: <HiMail size={24} />, description: "support@magic.com" },
-  { icon: <HiPhone size={24} />, description: "(664)000-0000" },
+  { id: "email", icon: <HiMail size={24} />, description: "support@magic.com" },
+  { id: "phone", icon: <HiPhone size={24} />, description: "(664) 000-0000" },
 ];
 
 const socialMediaData: socialMediaProps[] = [
@@ -52,7 +54,7 @@ const socialMediaData: socialMediaProps[] = [
   },
 ];
 
-// TODO: fix "target Element not found"
+// TODO: fix "target Element not found when clicks on the header and the footer logo"
 
 const Footer: React.FC = () => {
   return (
@@ -93,13 +95,35 @@ const Footer: React.FC = () => {
       <div>
         <h2 className={classes.footer__title}>Get In Touch</h2>
 
-        {contactsData.map(({ icon, description }, index) => (
-          <div
-            key={`contacts-${index + 1}`}
-            className={classes.footer__contacts}
-          >
+        {contactsData.map(({ id, icon, description }) => (
+          <div key={id} className={classes.footer__contacts}>
             <span className={classes.footer__contacts_icon}>{icon}</span>
-            <p className={classes.footer__contacts_text}>{description}</p>
+            {id === "email" ? (
+              <a
+                href={`mailto:${description}`}
+                className={classes.footer__contacts_text}
+              >
+                {description}
+              </a>
+            ) : id === "phone" ? (
+              <a
+                href={`tel:${description}`}
+                className={classes.footer__contacts_text}
+              >
+                {description}
+              </a>
+            ) : (
+              <a
+                href={`https://www.google.com/maps/search/?api=1&query=${encodeURIComponent(
+                  description
+                )}`}
+                target="_blank"
+                rel="noopener noreferrer"
+                className={classes.footer__contacts_text}
+              >
+                {description}
+              </a>
+            )}
           </div>
         ))}
       </div>
@@ -109,7 +133,13 @@ const Footer: React.FC = () => {
 
         {navLinkData.map(({ name, source }, index) => (
           <div key={`${name}${index}`}>
-            <NavigationLink to={source} spy={true} smooth={true} duration={500}>
+            <NavigationLink
+              to={source}
+              spy={true}
+              smooth={true}
+              duration={500}
+              className={classes.footer__contacts_text}
+            >
               {name}
             </NavigationLink>
           </div>
