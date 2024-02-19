@@ -1,6 +1,6 @@
-import React from "react";
+import React, { FunctionComponent } from "react";
 
-const NotFoundPage: React.FC = () => {
+const NotFoundPage: FunctionComponent = () => {
   return (
     <div>
       <p>NotFoundPage</p>

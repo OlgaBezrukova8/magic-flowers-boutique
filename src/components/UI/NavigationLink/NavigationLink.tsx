@@ -1,4 +1,4 @@
-import React from "react";
+import React, { FunctionComponent } from "react";
 import { Link as ScrollLink } from "react-scroll";
 
 interface LinkProps {
@@ -14,7 +14,7 @@ interface LinkProps {
   duration?: number;
 }
 
-const NavigationLink: React.FC<LinkProps> = ({
+const NavigationLink: FunctionComponent<LinkProps> = ({
   to,
   className,
   children,

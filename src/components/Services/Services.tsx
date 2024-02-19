@@ -1,4 +1,4 @@
-import React from "react";
+import React, { FunctionComponent } from "react";
 import Section from "../UI/Section/Section";
 import Image from "../UI/Image/Image";
 import flowersPurple from "../../images/flowers-bouquet-purple.jpg";
@@ -62,7 +62,7 @@ const servicesData: ServicesProps[] = [
   },
 ];
 
-const Services: React.FC = () => {
+const Services: FunctionComponent = () => {
   return (
     <Section className={classes.services} id="services">
       <h2 className={classes.services__title}>Our services</h2>

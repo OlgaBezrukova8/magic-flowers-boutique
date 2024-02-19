@@ -1,4 +1,4 @@
-import React from "react";
+import React, { FunctionComponent } from "react";
 
 interface ImageProps {
   source: string;
@@ -7,7 +7,12 @@ interface ImageProps {
   className?: string;
 }
 
-const Image: React.FC<ImageProps> = ({ source, alt, width, className }) => {
+const Image: FunctionComponent<ImageProps> = ({
+  source,
+  alt,
+  width,
+  className,
+}) => {
   const imageClasses = className || "";
 
   return <img src={source} alt={alt} width={width} className={imageClasses} />;

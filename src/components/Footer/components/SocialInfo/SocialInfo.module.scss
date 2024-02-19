@@ -1,0 +1,51 @@
+@import "../../../../styles/container.scss";
+@import "../../../../styles/variables.scss";
+@import "../../../../styles/mixins.scss";
+
+.SocialInfo {
+  &__logo {
+    padding: 10px;
+    background-color: rgba(255, 255, 255, 0.767);
+    @include append(40px);
+  }
+
+  &__text {
+    @include font-style-text(16px, 400, 20px, $grey);
+    @include append(40px);
+  }
+
+  &__contentWrapper {
+    display: flex;
+    align-items: center;
+
+    &_iconBox {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+
+      width: 44px;
+      height: 44px;
+
+      background-color: $white;
+      @include border-radius(50%);
+
+      &:not(:last-child) {
+        margin-right: 8px;
+      }
+    }
+
+    &_link {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+
+      padding: 15px;
+    }
+
+    &_icon {
+      display: inline-block;
+      color: $purple-light;
+      height: 30px;
+    }
+  }
+}

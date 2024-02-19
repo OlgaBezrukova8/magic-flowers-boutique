@@ -1,4 +1,4 @@
-import React from "react";
+import React, { FunctionComponent } from "react";
 import { FcBusinesswoman, FcBusinessman } from "react-icons/fc";
 import Section from "../UI/Section/Section";
 import Image from "../UI/Image/Image";
@@ -6,7 +6,7 @@ import people from "../../images/people.jpg";
 import starIcon from "../../assets/icons/star.svg";
 import classes from "./Testimonials.module.scss";
 
-const Testimonials: React.FC = () => {
+const Testimonials: FunctionComponent = () => {
   const numberOfIcons = 5;
   const icons = Array.from({ length: numberOfIcons }, (_, index) => (
     <Image

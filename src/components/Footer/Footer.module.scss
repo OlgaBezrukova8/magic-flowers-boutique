@@ -2,7 +2,7 @@
 @import "../../styles/variables.scss";
 @import "../../styles/mixins.scss";
 
-.footer {
+.Footer {
   margin: 0 auto;
   max-width: 1170px;
   position: relative;
@@ -25,73 +25,5 @@
     background-color: $black;
 
     z-index: -1;
-  }
-
-  &__logo {
-    padding: 10px;
-    background-color: rgba(255, 255, 255, 0.767);
-    @include append(40px);
-  }
-
-  &__text {
-    @include font-style-text(16px, 400, 20px, $grey);
-    @include append(40px);
-  }
-
-  &__social {
-    display: flex;
-    align-items: center;
-
-    &_iconBox {
-      display: flex;
-      align-items: center;
-      justify-content: center;
-
-      width: 44px;
-      height: 44px;
-
-      background-color: $white;
-      @include border-radius(50%);
-
-      &:not(:last-child) {
-        margin-right: 8px;
-      }
-    }
-
-    &_link {
-      display: flex;
-      align-items: center;
-      justify-content: center;
-
-      padding: 15px;
-    }
-
-    &_icon {
-      display: inline-block;
-      color: $purple-light;
-      height: 30px;
-    }
-  }
-
-  &__title {
-    @include font-style-text(28px, 600, 35px, $white);
-    @include append(40px);
-  }
-
-  &__contacts {
-    display: flex;
-    align-items: center;
-
-    &_icon {
-      display: inline-block;
-      margin-right: 8px;
-      height: 24px;
-      color: $purple-light;
-    }
-
-    &_text {
-      @include font-style-text(14px, 400, 35px, $grey);
-      cursor: pointer;
-    }
   }
 }
