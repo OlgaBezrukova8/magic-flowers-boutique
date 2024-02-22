@@ -1,0 +1,53 @@
+@import "../../styles/container.scss";
+@import "../../styles/variables.scss";
+@import "../../styles/mixins.scss";
+@import "../../styles/media.scss";
+
+.ScrollButton {
+  display: none;
+
+  @include media(tablet) {
+    position: fixed;
+    display: block;
+
+    visibility: hidden;
+    opacity: 0;
+
+    bottom: 26px;
+    right: 30px;
+
+    padding: 12px 14px;
+
+    border: none;
+    @include border-radius(50%);
+
+    color: $purple-dark;
+    background-color: $bg-grey;
+
+    transition: 250ms cubic-bezier(0.3, 0.6, 0.82, 0.75);
+
+    &:hover,
+    &:focus {
+      transform: scale(1.1);
+    }
+  }
+
+  @include media(desktop) {
+    bottom: 56px;
+    right: 62px;
+  }
+
+  &_visible {
+    visibility: visible;
+    opacity: 1;
+
+    animation-name: animation-btn;
+    animation-duration: 500ms;
+    animation-timing-function: linear;
+  }
+
+  &__icon {
+    width: 20px;
+    height: 20px;
+  }
+}
