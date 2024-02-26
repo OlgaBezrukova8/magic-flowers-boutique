@@ -4,6 +4,14 @@ import Button from "../UI/Button/Button";
 import classes from "./Hero.module.scss";
 
 const Hero: FunctionComponent = () => {
+  const scrollToServices = () => {
+    const servicesElement = document.getElementById("services");
+
+    if (servicesElement) {
+      servicesElement.scrollIntoView({ behavior: "smooth" });
+    }
+  };
+
   return (
     <Section className={classes.hero} id="home">
       <p className={classes.hero__text}>Welcome to Magic Flowers Boutique</p>
@@ -16,7 +24,11 @@ const Hero: FunctionComponent = () => {
         <br /> with our fast and exquisite floral creations!
       </h2>
 
-      <Button className={classes.hero__button} type="button" onClick={() => {}}>
+      <Button
+        className={classes.hero__button}
+        type="button"
+        onClick={scrollToServices}
+      >
         Explore our services
       </Button>
     </Section>
